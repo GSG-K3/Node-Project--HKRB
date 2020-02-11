@@ -3,19 +3,24 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "tape tap-spec test/test.js"
+    "test": "tape tap-spec test/test.js",
+    "start": "nodemon src/server.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "eslint": "^6.8.0",
     "nodemon": "^2.0.2",
     "tap-spec": "^5.0.0",
     "tape": "^4.13.0"
   },
   "dependencies": {
     "express": "^4.17.1",
-    "request": "^2.88.0"
+    "ignore": "^5.1.4",
+    "init": "^0.1.2",
+    "request": "^2.88.0",
+    "tap": "^14.10.6"
   }
 }
