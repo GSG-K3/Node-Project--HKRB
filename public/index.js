@@ -1,9 +1,3 @@
-// import { response } from "express";
-
-// import { response } from "express";
-
-// eslint-disable-next-line no-plusplus
-
 const xhr = new XMLHttpRequest();
 
 const inputValue = document.getElementById('inputSearch');
@@ -12,12 +6,10 @@ buttonSearch.addEventListener("click", (event) => {
     event.preventDefault()
     const bookvalue = inputValue.value.trim();
     const url = `https://www.googleapis.com/books/v1/volumes?q=${bookvalue}`;
-    //console.log("bbbbb")
     apicall(url, bookfunction, bookvalue);
 
 })
 const bookList = document.getElementById('bookList');
-// const searchButton = document.getElementById('buttonSearch');
 
 
 const apicall = (url, callback, bookvalue) => {
@@ -25,18 +17,14 @@ const apicall = (url, callback, bookvalue) => {
         if (xhr.status === 200 && xhr.readyState === 4) {
             const response = JSON.parse(xhr.responseText);
 
-            // console.log("hhhe", response);
-
             if (callback) callback(response);
         }
     };
     xhr.open('GET', `/search=${bookvalue}`, true);
-    console.log(bookvalue, "44444")
 
     xhr.send();
 };
 const bookfunction = (response) => {
-    //console.log(response, "000000000")
     bookList.innerText = "";
 
     for (let i = 0; i < 4; i++) {
@@ -55,7 +43,6 @@ const bookfunction = (response) => {
         bookAuther.innerHTML = response.items[i].volumeInfo.authors[0];
         bookImg.src = response.items[i].volumeInfo.imageLinks.thumbnail;
         bookDescription.innerHTML = response.items[i].volumeInfo.description;
-        // bookItem.src=response.items.imageLinks.smallThumbnail
         firstDiv.appendChild(bookImg);
         secondDiv.appendChild(bookName);
         secondDiv.appendChild(bookAuther);
@@ -65,6 +52,3 @@ const bookfunction = (response) => {
         secondDiv.appendChild(bookDescription);
     }
 };
-//console.log(inputValue, "11111")
-
-//module.exports = apicall;
