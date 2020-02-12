@@ -1,4 +1,18 @@
+h1 {
+    text-align: center;
+    background-image: url(img/books.jpg);
+    height: 200px;
+}
+
+form {
+    margin: 10px 0 20px 0;
+}
+
 .book_Item {
     display: flex;
     flex-direction: column;
+}
+
+.book-logo {
+    padding: 0 0 0 109px;
 }
