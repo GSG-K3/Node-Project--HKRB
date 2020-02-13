@@ -1,5 +1,6 @@
-.header img {
-    /* width: 100%; */
+* {
+  padding: 0;
+  margin: 0;
 }
 
 .header h1 {
@@ -23,19 +24,23 @@
 }
 
 .input-search {
-    width: 270px;
-    border: none;
-    border-bottom: 4px solid black;
-    box-shadow: 10px rgb(255, 255, 102);
-    margin: 10px 5px 10px 5px;
+  width: 270px;
+  border: none;
+  border-bottom: 4px solid black;
+  box-shadow: 10px rgb(255, 255, 102);
+  margin: 15px 5px 15px 5px;
+  font-size: 22px;
 }
 
 .button-search {
-    width: 100px;
-    height: 50px;
-    background-color: #b8f557;
-    border: none;
-    border-radius: 3px;
+  width: 161px;
+  height: 60px;
+  background-color: #d1f531;
+  border: none;
+  border-radius: 28px;
+  font-family: "Galada", cursive;
+  font-size: 30px;
+  margin: 10px;
 }
 
 .book_Item {
@@ -44,14 +49,40 @@
 }
 
 form {
-    margin: 10px 0 20px 0;
+  margin: 10px 0 20px 0;
 }
 
 .book_Item {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .book-logo {
-    padding: 0 0 0 109px;
+  padding: 30px 0 20px 109px;
+  width: 170px;
+}
+
+.book_name {
+  font-size: 26px;
+  font-family: "Galada", cursive;
+  padding: 5px;
+}
+
+.second_div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.second_div p {
+  font-size: 20px;
+  padding: 10px;
+  font-style: normal;
+}
+
+.second_div span {
+  font-size: 22px;
+  padding: 10px;
+  overflow-y: auto;
+  max-height: 186px;
 }
