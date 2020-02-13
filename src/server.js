@@ -3,6 +3,7 @@ const request = require('request');
 const path = require('path');
 const bodyParser = require('body-parser');
 
+require("env2")("beeb.env");
 const app = express();
 
 app.use(bodyParser.json());
