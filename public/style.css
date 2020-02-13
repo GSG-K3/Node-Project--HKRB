@@ -1,8 +1,47 @@
-h1 {
+.header img {
+  /* width: 100%; */
+}
+.header h1 {
+  font-family: "Galada", cursive;
+  position: absolute;
+  font-size: 26px;
+  padding-left: 7px;
+  padding-top: 15px;
+}
+.book-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.book-form label {
+  font-family: "Crimson Text", serif;
+  font-size: 26px;
+  margin: 10px 5px 10px 5px;
+}
+.input-search {
+  width: 270px;
+  border: none;
+  border-bottom: 4px solid black;
+  box-shadow: 10px rgb(255, 255, 102);
+  margin: 10px 5px 10px 5px;
+}
+.button-search {
+  width: 100px;
+  height: 50px;
+  background-color: #b8f557;
+  border: none;
+  border-radius: 3px;
+}
+.book_Item {
+  display: flex;
+  flex-direction: column;
+}
+/* h1 {
     text-align: center;
     background-image: url(img/books.jpg);
     height: 200px;
-}
+} */
 
 form {
     margin: 10px 0 20px 0;
